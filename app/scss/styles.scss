@@ -236,7 +236,6 @@ html {
 					background-color:  #f7f8fb;
 	                display:flex;
 	                align-content:center;
-
 	                .box_text {
 	                	margin:auto;
 
@@ -431,6 +430,18 @@ html {
 	body {
 	    main {
 	      	grid-template-rows:75px 700px 500px 400px 400px 500px 500px 500px 200px;
+			
+			.first_box {
+				.first_box_text {
+					padding-left:20px;
+				}
+			}
+			.second_box {
+				.second_box_text {
+					padding-left:20px;
+				}
+			}
+
 			.first_screen {
 				.first_screen_photo{
 					img {
@@ -438,6 +449,7 @@ html {
 						height:370px;
 					}
 				}
+
 			}
 			.second_screen {
 				.second_screen_photo{
@@ -457,14 +469,58 @@ html {
 	}
 }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1049px) {
 html {
 	body {
 	    main {
-	      	grid-template-rows:75px 600px 450px 300px 300px 450px 450px 450px 150px;
+	      	grid-template-rows:75px 450px 450px 300px 300px 450px 450px 450px 150px;
+	      		
+	      	.average_text {
+	      		font-size:1em;
+	      	}
+			h2 {
+				font-size:2.4em;
+			}
+			.first_box {
+				.first_box_text {
+					padding-left:20px;
+					.small_text {
+						font-size:0.9em;
+					}
+				}
+			}
+			.second_box {
+				.second_box_text {
+					padding-left:20px;
+					.small_text {
+						font-size:0.9em;
+					}
+				}
+			}
+			.first_screen {
+				.first_screen_text {
+					padding-left:20px;
+					.small_text {
+						font-size:0.96em;
+					}
+				}
+			}
+			.second_screen {
+				.second_screen_text {
+					padding-left:20px;
+					.small_text {
+						font-size:0.96em;
+					}
+				}
+			}
 
 	      	.director {
 				background-position:-200px 0;
+				.director_text {
+					.small_text {
+						font-size:0.96em;
+					}
+				}
 			}
 		}
 	    footer {
@@ -472,5 +528,34 @@ html {
 	    } 
 	}
 }
+}
+@media (max-width: 910px) {
+	html {
+		main {
+			.offer {
+				max-width:600px;
+				.offer_boxes {
+					border:solid 1px black ;
+					margin:20px 0 0 0;
+					max-width:600px;
+					.first_offer_box,
+					.second_offer_box,
+					.third_offer_box,
+					.fouth_offer_box {
+						max-width:140px;
+						margin:0 5px;
+						text-align:center;
+						border:solid 1px black;
+						font-size:0.8em;
+						.img {
+							min-height:60px;
+						}
+
+					}
+				}
+			}
+		}
+
+	}
 }
 
